@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Clone</title>
+    <title>YouTube Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +14,7 @@
             <button class="menu-btn">☰</button>
             <div class="logo">
                 <span class="logo-icon">▶</span>
-                <span class="logo-text">Youtube</span>
+                <span class="logo-text">YouTube</span>
             </div>
         </div>
         <div class="header-center">
@@ -24,7 +24,7 @@
         <div class="header-right">
             <button>➕</button>
             <button>🔔</button>
-            <img src="https://placehold.ru/32" alt="Avatar" class="avatar">
+            <div class="avatar-placeholder">👤</div>
         </div>
     </header>
     <div class="content">
@@ -46,16 +46,16 @@
             <hr />
             <nav>
                 <a href="#" class="sidebar-link">
-                    <spa class="icon">📚</span>
-                        <span>Библиотека</span>
+                    <span class="icon">📚</span>
+                    <span>Библиотека</span>
                 </a>
                 <a href="#" class="sidebar-link">
-                    <spa class="icon">🕐</span>
-                        <span>История</span>
+                    <span class="icon">🕐</span>
+                    <span>История</span>
                 </a>
                 <a href="#" class="sidebar-link">
-                    <spa class="icon">👍</span>
-                        <span>Понравилось</span>
+                    <span class="icon">👍</span>
+                    <span>Понравилось</span>
                 </a>
             </nav>
         </aside>
@@ -68,98 +68,195 @@
                 <div class="chip">Спорт</div>
                 <div class="chip">Образование</div>
                 <div class="chip">Технологии</div>
+                <div class="chip">Путешествия</div>
+                <div class="chip">Кулинария</div>
+                <div class="chip">DIY</div>
             </div>
-            <div class="video-grid">
-                <!-- Видео 1 -->
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">125:25:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Обучающее видео по программированию на языке Rust</h3>
-                            <p class="channel-name">Code School</p>
-                            <p class="video-meta">8 просмотров • 7 лет назад</p>
+
+            <section class="video-section">
+                <h2 class="section-title">Рекомендуемые</h2>
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/0/320/180" alt="Video">
+                            <span class="duration">12:52:15</span>
                         </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">7:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Обучающее видео по программированию на языке Python</h3>
-                            <p class="channel-name">Code School</p>
-                            <p class="video-meta">6 просмотров • 14 лет назад</p>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">📺</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Полный курс по веб-разработке 2026</h3>
+                                <p class="channel-name">WebDev School</p>
+                                <p class="video-meta">1.2 млн просмотров • 2 недели назад</p>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">15:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Смешные нарезки</h3>
-                            <p class="channel-name">Comedian Channel</p>
-                            <p class="video-meta">89 тыс. просмотров • 7 минут назад</p>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/1/320/180" alt="Video">
+                            <span class="duration">60:30</span>
                         </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">14:16</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Обучающее видео по программированию на языке C#</h3>
-                            <p class="channel-name">Code School</p>
-                            <p class="video-meta">5 просмотров • 5 лет назад</p>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">💻</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Как создать свой первый сайт за 1 час</h3>
+                                <p class="channel-name">IT Pro</p>
+                                <p class="video-meta">856 тыс. просмотров • 1 месяц назад</p>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">15:32</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Обучающее видео по программированию на языке JavaScript</h3>
-                            <p class="channel-name">Code School</p>
-                            <p class="video-meta">11 просмотров • 2 года назад</p>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/10/320/180" alt="Video">
+                            <span class="duration">8:45</span>
                         </div>
-                    </div>
-                </article>
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">48:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Обучающее видео по программированию на языке Kotlin</h3>
-                            <p class="channel-name">Code School</p>
-                            <p class="video-meta">852 тыс. просмотров • 1 месяц назад</p>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">😂</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Самые смешные моменты недели</h3>
+                                <p class="channel-name">Comedy Club</p>
+                                <p class="video-meta">3.4 млн просмотров • 3 дня назад</p>
+                            </div>
                         </div>
-                    </div>
-                </article>
-            </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/20/320/180" alt="Video">
+                            <span class="duration">45:00</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">🎮</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Лучшие игры 2026: полный обзор</h3>
+                                <p class="channel-name">GameZone</p>
+                                <p class="video-meta">2.1 млн просмотров • 3 недели назад</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="video-section">
+                <h2 class="section-title">Популярное</h2>
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/26/320/180" alt="Video">
+                            <span class="duration">15:20</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">📖</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Как выучить английский за 3 месяца</h3>
+                                <p class="channel-name">English Academy</p>
+                                <p class="video-meta">4.5 млн просмотров • 2 недели назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/30/320/180" alt="Video">
+                            <span class="duration">22:10</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">✈️</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Топ-10 мест для путешествий 2026</h3>
+                                <p class="channel-name">Travel Blog</p>
+                                <p class="video-meta">892 тыс. просмотров • 1 неделя назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/40/320/180" alt="Video">
+                            <span class="duration">9:15</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">📱</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Новый iPhone 17: стоит ли покупать?</h3>
+                                <p class="channel-name">Tech Review</p>
+                                <p class="video-meta">5.1 млн просмотров • 1 месяц назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/50/320/180" alt="Video">
+                            <span class="duration">30:00</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">🍕</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Готовим пиццу как в Италии</h3>
+                                <p class="channel-name">Cooking Master</p>
+                                <p class="video-meta">678 тыс. просмотров • 3 недели назад</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="video-section">
+                <h2 class="section-title">Подписки</h2>
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/60/320/180" alt="Video">
+                            <span class="duration">18:30</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">🐙</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Git и GitHub: полный курс</h3>
+                                <p class="channel-name">CodeMaster</p>
+                                <p class="video-meta">342 тыс. просмотров • 5 дней назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://picsum.photos/id/70/320/180" alt="Video">
+                            <span class="duration">14:45</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="channel-avatar-placeholder">🏠</div>
+                            <div class="video-details">
+                                <h3 class="video-title">Дизайн интерьера: тренды 2026</h3>
+                                <p class="channel-name">Design Studio</p>
+                                <p class="video-meta">215 тыс. просмотров • 2 дня назад</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </main>
     </div>
 
-
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">▶</span>
+                <span>YouTube Clone</span>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">📘</a>
+                <a href="#" class="social-link">📷</a>
+                <a href="#" class="social-link">🐦</a>
+                <a href="#" class="social-link">🎬</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 YouTube Clone | Учебный проект</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
